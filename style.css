@@ -1,0 +1,262 @@
+
+  
+  body, html {
+      height: 100%;
+      font-family: sans-serif;
+      overflow:none;
+  }
+  .js-pscroll {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .table100 .ps__rail-y {
+    width: 9px;
+    background-color: transparent;
+    opacity: 1 !important;
+    right: 5px;
+  }
+  
+  .table100 .ps__rail-y::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    width: 100%;
+    height: calc(100% - 30px);
+    left: 0;
+    top: 15px;
+  }
+  
+  .table100 .ps__rail-y .ps__thumb-y {
+    width: 100%;
+    right: 0;
+    background-color: transparent;
+    opacity: 1 !important;
+  }
+  
+  .table100 .ps__rail-y .ps__thumb-y::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #cccccc;
+    border-radius: 5px;
+    width: 100%;
+    height: calc(100% - 30px);
+    left: 0;
+    top: 15px;
+  }
+  
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ Table ]*/
+  
+  .limiter {
+    width: 1066px;
+    margin: 0 auto;
+  }
+  
+  .container-table100 {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+  }
+  
+  .wrap-table100 {
+    width: 1170px;
+  }
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ Table ]*/
+  .table100 {
+    background-color: #fff;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th, td {
+    font-weight: unset;
+    padding-right: 10px;
+  }
+  
+  .column1 {
+    width: 33%;
+    padding-left: 40px;
+  }
+  
+  .column2 {
+    width: 13%;
+  }
+  
+  .column3 {
+    width: 22%;
+  }
+  
+  .column4 {
+    width: 19%;
+  }
+  
+  
+  
+  .table100-head th {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  
+  .table100-body td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align:center;
+  }
+  
+  /*==================================================================
+  [ Fix header ]*/
+  .table100 {
+    position: relative;
+    padding-top: 60px;
+  }
+  
+  .table100-head {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .table100-body {
+    max-height: 585px;
+    overflow: auto;
+  }
+  
+  
+  /*==================================================================
+  [ Ver1 ]*/
+  
+  .table100.ver1 th {
+    font-family: Lato-Bold;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.4;
+  
+    background-color: #6c7ae0;
+  }
+  
+  .table100.ver1 td {
+    font-family: Lato-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.4;
+  }
+  
+  .table100.ver1 .table100-body tr:nth-child(even) {
+    background-color: #f8f6ff;
+  }
+  
+  /*---------------------------------------------*/
+  
+  .table100.ver1 {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .table100.ver1 .ps__rail-y {
+    right: 5px;
+  }
+  
+  .table100.ver1 .ps__rail-y::before {
+    background-color: #ebebeb;
+  }
+  
+  .table100.ver1 .ps__rail-y .ps__thumb-y::before {
+    background-color: #cccccc;
+  }
+  
+  
+  
+
+
+  /*Form CSS*/
+
+
+ 
+.form-style-2{
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-2-heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.form-style-2 label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+.form-style-2 label > span{
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+.form-style-2 span.required{
+    color:red;
+}
+
+}
+.form-style-2 input.input-field, .form-style-2{
+    width: 48%; 
+}
+.form-style-2 input.input-field, 
+{
+    box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+.form-style-2 .input-field:focus, 
+{
+    border: 1px solid #0C0;
+}
+.form-style-2{
+    height:100px;
+    width: 55%;
+}
+.form-style-2 input[type=submit]{
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    
+    border-radius: 3px;
+    
+}
+.form-style-2 input[type=submit]:hover{
+    background: #EA7B00;
+    color: #fff;
+}

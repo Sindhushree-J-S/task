@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div ng-controller="ctr">
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Id</th>
-            <th>Runs</th>
-            <th>Remove Player</th>
-        </tr>
-        <tr ng-repeat="player in players">
-            <td>{{player.name}}</td>
-            <td>{{player.id}}</td>
-            <td>{{player.runs}}</td>
-            <td ng-click="removePlayer(player)">X</td>
-        </tr>
-    </table>
-    <form ng-submit="addPlayer()">
-        Name: <input type="text" ng-model="newName"><br>
-        Id: <input type="text" ng-model="newId"><br>
-        Runs: <input type="text" ng-model="newRuns"><br>
-        <input type="submit" value="submit">
-    </form>
-</div>
+
+        <div class="limiter">
+            <div class="container-table100">
+                <div class="wrap-table100">
+                    <div class="table100 ver1 m-b-110">
+                        <div class="table100-head">
+                            <table>
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="cell100 column1">Name</th>
+                                        <th class="cell100 column2">Id</th>
+                                        <th class="cell100 column3">Runs</th>
+                                        <th class="cell100 column4">Remove Player</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="table100-body js-pscroll">
+                            <table>
+                                <tbody>
+                                    <tr ng-repeat="player in players" class="row100 body">
+                                        <td class="cell100 column1">{{player.name}}</td>
+                                        <td class="cell100 column2">{{player.id}}</td>
+                                        <td class="cell100 column3">{{player.runs}}</td>
+                                        <td ng-click="removePlayer(player)" class="cell100 column4">X</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-style-2">
+            <div class="form-style-2-heading">Provide player information</div>
+
+
+            <form ng-submit="addPlayer()">
+                <label for="field1">
+                    <span>Name :</span>
+                    <input type="text" ng-model="newName" class="input-field" name="field1">
+                </label>
+                <br>
+                <label for="field1">
+                    <span>Id : </span>
+                    <input type="text" ng-model="newId" class="input-field" name="field1">
+                </label>
+                <br>
+                <label for="field1">
+                    <span>Runs : </span>
+                    <input type="text" ng-model="newRuns" class="input-field" name="field1">
+                </label>
+                <br>
+                <label>
+                    <span>&nbsp;</span>
+                    <input type="submit" value="submit">
+                </label>
+            </form>
+        </div>
+    </div>
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
