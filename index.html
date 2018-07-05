@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-controller="ctr">
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Runs</th>
+            <th>Remove Player</th>
+        </tr>
+        <tr ng-repeat="player in players">
+            <td>{{player.name}}</td>
+            <td>{{player.id}}</td>
+            <td>{{player.runs}}</td>
+            <td ng-click="removePlayer(player)">X</td>
+        </tr>
+    </table>
+    <form ng-submit="addPlayer()">
+        Name: <input type="text" ng-model="newName"><br>
+        Id: <input type="text" ng-model="newId"><br>
+        Runs: <input type="text" ng-model="newRuns"><br>
+        <input type="submit" value="submit">
+    </form>
+</div>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
